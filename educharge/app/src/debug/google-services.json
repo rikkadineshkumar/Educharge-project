@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1061385743037",
+    "project_id": "firebase-educharge"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1061385743037:android:0cd524268e217485",
+        "android_client_info": {
+          "package_name": "com.educharge.educharge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1061385743037-7vu0qeb4mjl3f6r19914enpcp42ta0ud.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.educharge.educharge",
+            "certificate_hash": "17a2cde3face9deb2f4f1c0aad3bb309a76da443"
+          }
+        },
+        {
+          "client_id": "1061385743037-ll9l31u6l9gk1ggqn32b8pfetdpvdj91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDM7_DVh6WxPp02QTZHPdembaY49wcMgFA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

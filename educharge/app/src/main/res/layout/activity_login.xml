@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.educharge.educharge.LoginActivity">
+
+    <TextView
+        android:id="@+id/ttvForgetpass"
+        android:layout_width="286dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="33dp"
+        android:layout_weight="0.25"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:text="forgotten password ?"
+        android:textAlignment="center"
+        android:textColor="@color/colorAWhite"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="@+id/btSignIn"
+        app:layout_constraintRight_toRightOf="@+id/btSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/btSignIn" />
+
+    <Button
+        android:id="@+id/btSignIn"
+        android:layout_width="310dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="23dp"
+        android:layout_weight="0.37"
+        android:background="@drawable/textbg"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="login"
+        android:textAlignment="center"
+        android:textColor="@color/cardview_light_background"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtpassword"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:text="login" />
+
+    <TextView
+        android:id="@+id/ttvSignup"
+        android:layout_width="265dp"
+        android:layout_height="28dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="8dp"
+
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="71dp"
+        android:layout_weight="1"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:text="Don't have an account ? "
+        android:textAlignment="center"
+        android:textColor="@color/colorAWhite"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintLeft_toLeftOf="@+id/btSignIn"
+        app:layout_constraintRight_toRightOf="@+id/btSignIn"
+        app:layout_constraintTop_toBottomOf="@+id/btSignIn"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <ImageView
+        android:id="@+id/in_loginButton"
+        android:layout_width="71dp"
+        android:layout_height="69dp"
+        android:layout_marginEnd="121dp"
+        android:layout_marginStart="121dp"
+        android:background="@drawable/ln"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginLeft="0dp"
+        app:layout_constraintLeft_toLeftOf="@+id/edtpassword"
+        app:layout_constraintTop_toTopOf="@+id/g_loginButton"
+        android:layout_marginTop="0dp"
+        app:layout_constraintBottom_toBottomOf="@+id/g_loginButton"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintRight_toLeftOf="@+id/g_loginButton"
+        android:layout_marginRight="0dp"
+        app:layout_constraintHorizontal_bias="0.511" />
+
+
+    <EditText
+        android:id="@+id/edtpassword"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/textbg"
+        android:cursorVisible="true"
+        android:filterTouchesWhenObscured="false"
+        android:fontFamily="sans-serif"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="65dp"
+        android:paddingRight="10dp"
+        android:shadowColor="@color/cardview_shadow_start_color"
+        android:textColor="@color/colorAWhite"
+        android:textColorHighlight="?android:attr/textColorLink"
+        android:textColorHint="@color/colorAWhite"
+        android:textColorLink="@color/colorAWhite"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtusername"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <EditText
+        android:id="@+id/edtusername"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="125dp"
+        android:background="@drawable/textbg"
+        android:cursorVisible="true"
+        android:filterTouchesWhenObscured="false"
+        android:fontFamily="sans-serif"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress"
+        android:paddingLeft="65dp"
+        android:paddingRight="10dp"
+        android:shadowColor="@color/cardview_shadow_start_color"
+        android:textColor="@color/colorAWhite"
+        android:textColorHighlight="?android:attr/textColorLink"
+        android:textColorHint="@color/colorAWhite"
+        android:textColorLink="@color/colorAWhite"
+        android:textSize="20sp"
+        android:visibility="visible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-525dp" />
+
+    <ImageView
+        android:id="@+id/fb_loginButton"
+        android:layout_width="71dp"
+        android:layout_height="69dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/fb"
+        app:layout_constraintBottom_toBottomOf="@+id/g_loginButton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toRightOf="@+id/g_loginButton"
+        app:layout_constraintRight_toRightOf="@+id/edtpassword"
+        app:layout_constraintTop_toTopOf="@+id/g_loginButton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fb_login_button_root"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="33dp"
+        android:layout_height="31dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/m"
+        android:paddingTop="9dp"
+        app:layout_constraintHorizontal_bias="0.027"
+        app:layout_constraintLeft_toLeftOf="@+id/edtusername"
+        app:layout_constraintRight_toRightOf="@+id/edtusername"
+        app:layout_constraintTop_toTopOf="@+id/edtusername" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="39dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="0dp"
+        android:paddingTop="9dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/edtpassword"
+        app:layout_constraintRight_toRightOf="@+id/edtpassword"
+        app:layout_constraintTop_toTopOf="@+id/edtpassword"
+        app:srcCompat="@android:drawable/ic_lock_lock" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="234dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="64dp" />
+
+
+    <ImageView
+        android:id="@+id/g_loginButton"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="@+id/edtpassword"
+        app:layout_constraintRight_toRightOf="@+id/edtpassword"
+        app:layout_constraintTop_toBottomOf="@+id/ttvSignup"
+        app:srcCompat="@drawable/google" />
+
+    <com.google.android.gms.common.SignInButton
+         android:id="@+id/sign_in_button"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerInParent="true"
+         android:layout_gravity="center_horizontal"
+         android:visibility="gone"
+        tools:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>

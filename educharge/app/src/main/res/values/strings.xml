@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">Educharge</string>
+    <string name="CreatePass">Create a password (Minimum 6 characters)</string>
+    <string name="UserId">Email address</string>
+    <string name="WritePass">Password (Minimum 6 characters)</string>
+    <string name="ForgetPass">Please enter your email address or phone number to search for your account it will be used for verification</string>
+    <string name="ForgetEmailPhone">Email address or phone number</string>
+
+    <string name="nameerror">Enter a valid name</string>
+    <string name="emailerror">Enter a valid email</string>
+    <string name="mobileerror">Enter a valid mobile</string>
+    <string name="dateerror">Enter a valid date</string>
+    <string name="ageerror">Enter a valid age</string>
+    <string name="passworderror">Enter a password of (min) 8 char</string>
+    <string name="roleerror">Enter your role</string>
+
+    <!--facebook app id and secrete-->
+    <string name="facebook_app_id">446500835711048</string>
+    <string name="fb_login_protocol_scheme">fb110457629550278</string>
+    <!---->
+
+    <string-array name="CountryCode">
+        <item>India +91</item>>
+        <item>Indonesia +62</item>>
+        <item>Italy +39</item>>
+        <item>Japan +81</item>>
+        <item>China +86</item>>
+        <item>Denmark +45</item>>
+        <item>Egypt +20</item>>
+        <item>Nepal +977</item>>
+        <item>New Zealand +64</item>>
+        <item>Pakistan +92</item>>
+        <item>Russian Federation +7</item>>
+        <item>Roamania +40</item>>
+        <item>Spain +34</item>>
+        <item>Switzerland +41</item>>
+        <item>United Kingdom +44</item>>
+        <item>United States +1</item>>
+        <item>Vietnam +84</item>>
+
+    </string-array>
+
+
+    <string-array name="Gender">
+        <item>Male</item>>
+        <item>Female</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_home_page">home_page</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

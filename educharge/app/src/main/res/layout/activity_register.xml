@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:backgroundTint="@android:color/darker_gray"
+    android:backgroundTintMode="multiply"
+    tools:context="com.educharge.educharge.RegisterActivity">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/ttvTitle"
+                android:layout_width="180dp"
+                android:layout_height="34dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_weight="0.21"
+                android:background="@drawable/logo"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintHorizontal_bias="0.503"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.21"
+                android:textColorHint="@color/colorAWhite">
+
+                <EditText
+                    android:id="@+id/edtfname"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:shadowColor="@color/cardview_shadow_start_color"
+                    android:textColor="@color/colorAWhite"
+                    android:textColorHighlight="?attr/colorAccent"
+                    android:textColorHint="@color/colorAWhite"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    android:textSize="20sp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/colorAWhite">
+
+                <EditText
+                    android:id="@+id/edtlname"
+                    android:layout_width="match_parent"
+                    android:layout_height="62dp"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:shadowColor="@color/cardview_shadow_start_color"
+                    android:textColor="@color/colorAWhite"
+                    android:textColorHighlight="?attr/colorAccent"
+                    android:textColorHint="@color/colorAWhite"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.21"
+                android:orientation="horizontal"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:weightSum="1">
+
+
+                <Spinner
+                    android:id="@+id/country_code_spinner"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:elevation="1dp"
+                    android:entries="@array/CountryCode"
+                    android:paddingTop="20sp"
+                    android:spinnerMode="dialog" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorAWhite">
+
+                    <EditText
+                        android:id="@+id/edtmobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Phone"
+                        android:inputType="phone"
+                        android:textColor="@color/colorAWhite"
+                        android:textColorHighlight="?attr/colorAccent"
+                        android:textColorHint="@color/colorAWhite"
+                        android:textColorLink="@android:color/holo_orange_dark"
+                        android:textCursorDrawable="?android:attr/textCursorDrawable"
+                        android:textSize="20sp" />
+                </android.support.design.widget.TextInputLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:weightSum="1">
+
+
+                <TextView
+                    android:id="@+id/textViewgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.73"
+                    android:paddingTop="10sp"
+                    android:text="Gender"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/colorAWhite"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/gender_spinner"
+                    android:layout_width="184dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_horizontal"
+                    android:elevation="1dp"
+                    android:entries="@array/Gender"
+                    android:paddingTop="15sp"
+                    android:spinnerMode="dialog" />
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.21"
+                android:textColorHint="@color/colorAWhite">
+
+                <EditText
+                    android:id="@+id/edtdob"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:ems="10"
+                    android:hint="Enter DOB (dd/mm/yyyy)"
+                    android:inputType="date"
+                    android:shadowColor="@color/cardview_shadow_start_color"
+                    android:textColor="@color/colorAWhite"
+                    android:textColorHighlight="?attr/colorAccent"
+                    android:textColorHint="@color/colorAWhite"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.21"
+                android:textColorHint="@color/colorAWhite">
+
+                <EditText
+                    android:id="@+id/edtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:hint="Create your Email"
+                    android:inputType="textEmailAddress"
+                    android:shadowColor="@color/cardview_shadow_start_color"
+                    android:textColor="@color/colorAWhite"
+                    android:textColorHighlight="?attr/colorAccent"
+                    android:textColorHint="@color/colorAWhite"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.21"
+                android:textColorHint="@color/colorAWhite">
+
+                <EditText
+                    android:id="@+id/edtpass"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:hint="Enter a Password"
+                    android:inputType="textWebPassword"
+                    android:shadowColor="@color/cardview_shadow_start_color"
+                    android:textColor="@color/colorAWhite"
+                    android:textColorHighlight="?attr/colorAccent"
+                    android:textColorHint="@color/colorAWhite"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.21"
+                android:textColorHint="@color/colorAWhite">
+
+                <EditText
+                    android:id="@+id/edtrepass"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:hint="Retype the Password"
+                    android:inputType="textWebPassword"
+                    android:shadowColor="@color/cardview_shadow_start_color"
+                    android:textColor="@color/colorAWhite"
+                    android:textColorHighlight="?attr/colorAccent"
+                    android:textColorHint="@color/colorAWhite"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.21"
+                android:textColorHint="@color/colorAWhite">
+
+                <EditText
+                    android:id="@+id/edtrole"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:hint="Role (i.e. Student,Teacher)"
+                    android:inputType="text"
+                    android:shadowColor="@color/cardview_shadow_start_color"
+                    android:textColor="@color/colorAWhite"
+                    android:textColorHighlight="?attr/colorAccent"
+                    android:textColorHint="@color/colorAWhite"
+                    android:textColorLink="@android:color/holo_orange_dark"
+                    android:textCursorDrawable="?android:attr/textCursorDrawable"
+                    android:textSize="20sp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btRegister"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/textbg"
+                android:hapticFeedbackEnabled="true"
+                android:shadowColor="@color/cardview_shadow_start_color"
+                android:text="Register"
+                android:textColor="@color/colorAWhite"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColorHint="@color/colorAWhite" />
+
+            <TextView
+                android:id="@+id/ttvSignIn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.21"
+                android:shadowColor="@color/cardview_shadow_start_color"
+                android:text="Already have account? Sign In"
+                android:textAlignment="center"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@color/colorAWhite"
+                android:textColorHighlight="@color/colorAccent"
+                android:textColorHint="@color/colorAWhite" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
